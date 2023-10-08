@@ -7,11 +7,11 @@ const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#bg')
 });
 
-// import { OrbitControls } from './controls/OrbitControls'
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight);
-camera.position.setZ(40)
+camera.position.setZ(30)
 
 // const geometry = new THREE.SphereGeometry( 15, 32, 16 ); 
 // const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } )
@@ -19,18 +19,18 @@ camera.position.setZ(40)
 
 // scene.add(sphere);
 
-// const bulb = new THREE.PointLight(0xffffff)
-// bulb.position.set(10,10,10)
-// scene.add(bulb)
+const bulb = new THREE.PointLight(0xffffff, 300, 0)
+bulb.position.set(0,0,25)
+scene.add(bulb)
 
-const ambient = new THREE.AmbientLight(0xffffff)
-scene.add(ambient)
+// const ambient = new THREE.AmbientLight(0xffffff)
+// scene.add(ambient)
 
 // const helper = new THREE.PointLightHelper(bulb)
 // scene.add(helper)
 
-const grid = new THREE.GridHelper(200,50)
-scene.add(grid)
+// const grid = new THREE.GridHelper(200,50)
+// scene.add(grid)
 
 const globeTexture = new THREE.TextureLoader().load('images/globe.jpg')
 
