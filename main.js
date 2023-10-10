@@ -48,11 +48,16 @@ renderer.render(scene, camera);
 const spaceTexture = new THREE.TextureLoader().load('images/space.jpg');
 scene.background = spaceTexture; 
 
+let z = 0;
+const zFinal = 1;
 
 function animate() {
     requestAnimationFrame(animate)
-    renderer.render(scene, camera)
-    globe.rotation.y += -0.005;
+    z += 0.01;
+    if (z < zFinal) {
+        globe.rotation.x = z
+    }
+    renderer.render(scene, camera); 
 }
 
 animate()
