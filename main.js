@@ -34,7 +34,7 @@ scene.add(bulb)
 // const ambient = new THREE.AmbientLight(0xffffff)
 // scene.add(ambient)
 
-const globeTexture = new THREE.TextureLoader().load('images/globe.jpg')
+const globeTexture = new THREE.TextureLoader().load('images/pruebas_2.png')
 
 const globe = new THREE.Mesh(
     new THREE.SphereGeometry( 1, 13, 13 ),
@@ -49,8 +49,8 @@ globe.position.x = x;
 
 scene.add(globe)
 
-const spaceTexture = new THREE.TextureLoader().load('images/space.jpg');
-scene.background = spaceTexture; 
+// const spaceTexture = new THREE.TextureLoader().load('images/space.jpg');
+// scene.background = spaceTexture; 
 
 renderer.render(scene, camera); 
 
