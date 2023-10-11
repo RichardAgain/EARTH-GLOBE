@@ -24,22 +24,21 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight);
-camera.position.setZ(10)
+camera.position.setZ(2)
 
 
-const bulb = new THREE.PointLight(0xffffff, 100, 0)
-bulb.position.set(0,0,10)
+const bulb = new THREE.PointLight(0xffffff, 3, 0)
+bulb.position.set(0,0,2)
 scene.add(bulb)
 
 // const ambient = new THREE.AmbientLight(0xffffff)
 // scene.add(ambient)
 
-const globeTexture = new THREE.TextureLoader().load('images/globePrueba.jpg')
-const normalTexture = new THREE.TextureLoader().load('images/normal.jpg')
+const globeTexture = new THREE.TextureLoader().load('images/globe.jpg')
 
 const globe = new THREE.Mesh(
-    new THREE.SphereGeometry( 5, 16, 16 ),
-    new THREE.MeshStandardMaterial({ map: globeTexture, normalMap: normalTexture })  
+    new THREE.SphereGeometry( 1, 13, 13 ),
+    new THREE.MeshStandardMaterial({ map: globeTexture })  
 );
 globe.rotation.y += 5.9;
 //camera.position.z += -2;
@@ -50,15 +49,15 @@ globe.position.x = x;
 
 scene.add(globe)
 
-renderer.render(scene, camera); 
-
 const spaceTexture = new THREE.TextureLoader().load('images/space.jpg');
 scene.background = spaceTexture; 
+
+renderer.render(scene, camera); 
 
 let z = 0;
 const zFinal = 0.6;
 let zoom = 0;
-const zoomFinal = 1;
+const zoomFinal = 2;
 const zoomVelocity = 0.005;
 
 function updateZoom() {
@@ -79,8 +78,10 @@ function updateZoom() {
     }
 function animate() {
     requestAnimationFrame(animate)
-    updateZoom();
-    argentina();
+    // updateZoom();
+    // argentina();
+    // globe.rotation.z += 0.001
+    globe.rotation.y += 0.01
     renderer.render(scene, camera)
 }
 
