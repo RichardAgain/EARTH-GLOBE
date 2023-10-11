@@ -1,5 +1,4 @@
-let boton = document.getElementById("pais1")
-boton.addEventListener("click", animate)
+
 const scene = new THREE.Scene();
 
 const camera = new THREE.PerspectiveCamera ( 75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -38,7 +37,7 @@ const globeTexture = new THREE.TextureLoader().load('images/globePrueba.jpg')
 const normalTexture = new THREE.TextureLoader().load('images/normal.jpg')
 
 const globe = new THREE.Mesh(
-    new THREE.SphereGeometry( 5, 16, 16 ),
+    new THREE.SphereGeometry( 5, 100, 100 ),
     new THREE.MeshStandardMaterial({ map: globeTexture, normalMap: normalTexture })  
 );
 globe.rotation.y += 5.9;
@@ -61,7 +60,7 @@ let zoom = 0;
 const zoomFinal = 1;
 const zoomVelocity = 0.005;
 
-function updateZoom() {
+function zoom_in() {
     if (zoom < zoomFinal) {
         zoom += zoomVelocity;
     }
@@ -79,8 +78,9 @@ function updateZoom() {
     }
 function animate() {
     requestAnimationFrame(animate)
-    updateZoom();
-    argentina();
+    // updateZoom();
+    // argentina();
+    globe.rotation.y += 0.01
     renderer.render(scene, camera)
 }
 
