@@ -23,10 +23,15 @@ function marcador(x,y){
 
 document.querySelector('#arg').onclick = function() {
     mostrar(0,0)
-    marcador(-32,35)
+    marcador(-27.5,45)
 }
 
 document.querySelector('#ven').onclick = function() {
     mostrar(0,0)
+    marcador(-28,0)
+}
+
+document.querySelector('#fin').onclick = function() {
+    mostrar(60,15)
     marcador(-35,2)
 }
