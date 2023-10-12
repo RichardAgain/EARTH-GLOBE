@@ -118,7 +118,7 @@ main {
     width: 30vw;
     height: 95vh;
     transform: translateX(-102%);
-    transition: 2s ease-in-out;
+    transition: 1.5s ease-in-out;
     opacity: 0;
 }
 
@@ -130,7 +130,7 @@ main {
     border: 0px;
     background-color: #00000000;
     transform: translateX(-100%);
-    transition: 2s ease-in-out;
+    transition: 1.5s ease-in-out;
     z-index: 1;
     opacity: 0;
 }

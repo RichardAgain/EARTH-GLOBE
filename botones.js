@@ -8,7 +8,7 @@ function mostrar(x, y) {
     document.querySelector('.content').style.transform = 'translateX(68%)'
     document.querySelector('.content').style.opacity = '1'
 
-    document.querySelector('.back').style.transform = 'translateX(1200%)'
+    document.querySelector('.back').style.transform = 'translateX(32vw)'
     document.querySelector('.back').style.opacity = '1'
 
     document.querySelector('.world').style.backgroundPositionX = x + "%"

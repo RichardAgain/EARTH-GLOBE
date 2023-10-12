@@ -43,14 +43,15 @@ function hide() {
 function hideC(){
     document.querySelector('.bar').style.transform = 'translateX(100%)'
     
-            document.querySelector('.show').style.transform = 'translateX(20vw)'
-            document.querySelector('.show').style.opacity = '1'
-    
-            document.querySelector('.content').style.transform = 'translateX(-68%)'
-            document.querySelector('.content').style.opacity = '0'
-    
-            document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
-            
-            document.querySelector('.back').style.transform = 'translateX(-1200%)'
-            document.querySelector('.back').style.opacity = '0'
+        document.querySelector('.content').style.transform = 'translateX(-68%)'
+        document.querySelector('.content').style.opacity = '0'
+
+        document.querySelector('.show').style.transform = 'translateX(20vw)'
+        document.querySelector('.show').style.opacity = '1'
+
+
+        document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
+        
+        document.querySelector('.back').style.transform = 'translateX(-1200%)'
+        document.querySelector('.back').style.opacity = '0'
 }
