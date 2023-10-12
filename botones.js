@@ -2,6 +2,8 @@
 function mostrar(x, y, pais) {
     document.querySelector('.bar').style.transform = 'translateX(-100%)'
     document.querySelector('.content').style.transform = 'translateX(5%)'
+    document.querySelector('.world').style.backgroundPositionX = x + "%"
+    document.querySelector('.world').style.backgroundPositionY = y + "%"
 }
 
 document.querySelector('#arg').onclick = function() {
