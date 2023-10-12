@@ -30,4 +30,8 @@ function hide() {
     document.querySelector('.world').style.transform = 'translate(0,0) scale(1)'
 
     document.querySelector('.icon').setAttribute('src','icons/search.png')
+
+    document.querySelector('.punto').style.transition = 'opacity 0.3s'
+
+    document.querySelector('.punto').style.opacity = "0"
 }
