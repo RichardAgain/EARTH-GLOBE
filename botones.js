@@ -1,9 +1,11 @@
 
 function mostrar(x, y, pais) {
     document.querySelector('.bar').style.transform = 'translateX(-100%)'
-    document.querySelector('.content').style.transform = 'translateX(5%)'
+    document.querySelector('.content').style.transform = 'translateX(68%)'
     document.querySelector('.world').style.backgroundPositionX = x + "%"
     document.querySelector('.world').style.backgroundPositionY = y + "%"
+    document.querySelector('.world').style.transform = 'translate(20vw,0) scale(2)'
+
 }
 
 function marcador(x,y){
@@ -21,8 +23,10 @@ function marcador(x,y){
 
 }
 
+
+
 document.querySelector('#arg').onclick = function() {
-    mostrar(0,0)
+    mostrar(10,10)
     marcador(-27.5,45)
 }
 
