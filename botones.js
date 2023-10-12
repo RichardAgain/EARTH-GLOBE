@@ -1,7 +1,13 @@
 
-function mostrar(x, y, pais) {
+function mostrar(x, y) {
     document.querySelector('.bar').style.transform = 'translateX(-100%)'
+    
+    document.querySelector('.show').style.transform = 'translateX(-150%)'
+    document.querySelector('.show').style.opacity = '0'
+    
     document.querySelector('.content').style.transform = 'translateX(68%)'
+    document.querySelector('.content').style.opacity = '1'
+
     document.querySelector('.world').style.backgroundPositionX = x + "%"
     document.querySelector('.world').style.backgroundPositionY = y + "px"
     document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
@@ -27,8 +33,13 @@ function regreso(){
         mostrar(0,0)
         marcador(-28,0)
         document.querySelector('.bar').style.transform = 'translateX(100%)'
+
         document.querySelector('.show').style.transform = 'translateX(20vw)'
+        document.querySelector('.show').style.opacity = '1'
+
         document.querySelector('.content').style.transform = 'translateX(-68%)'
+        document.querySelector('.content').style.opacity = '0'
+
         document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
     }, 20000);
 
@@ -44,6 +55,7 @@ document.querySelector('#arg').onclick = function() {
 document.querySelector('#ven').onclick = function() {
     mostrar(0,0)
     marcador(-28,0)
+    regreso()
 }
 
 document.querySelector('#fin').onclick = function() {

@@ -41,15 +41,21 @@ main {
     position: fixed;
     width: 50px;
     height: 10%;
-    left: 22vw;
+    left: 21vw;
     border: 0px;
-    background-color: rgba(128, 128, 128, 0.289);
-    background-image: url(icons/search.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-color: #00000000;
     transition: 1s;
     z-index: 1;
+}
+
+.show img {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.show:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .bar {
@@ -112,5 +118,6 @@ main {
     width: 30vw;
     height: 95vh;
     transform: translateX(-102%);
-    transition-duration: 2s;
+    transition: 2s ease-in-out;
+    opacity: 0;
 }
