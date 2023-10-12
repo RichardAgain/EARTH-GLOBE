@@ -8,6 +8,9 @@ function mostrar(x, y) {
     document.querySelector('.content').style.transform = 'translateX(68%)'
     document.querySelector('.content').style.opacity = '1'
 
+    document.querySelector('.back').style.transform = 'translateX(1200%)'
+    document.querySelector('.back').style.opacity = '1'
+
     document.querySelector('.world').style.backgroundPositionX = x + "%"
     document.querySelector('.world').style.backgroundPositionY = y + "px"
     document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
@@ -43,6 +46,8 @@ function regreso(pais = null){
             document.querySelector('.content').style.opacity = '0'
     
             document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
+
+            doc
         }, 20000);
     }
     else{
@@ -57,6 +62,9 @@ function regreso(pais = null){
 
         document.querySelector('.content').style.transform = 'translateX(-68%)'
         document.querySelector('.content').style.opacity = '0'
+
+        document.querySelector('.back').style.transform = 'translateX(-1200%)'
+        document.querySelector('.back').style.opacity = '0'
 
         document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
     }, 20000);
