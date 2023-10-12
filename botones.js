@@ -6,10 +6,27 @@ function mostrar(x, y, pais) {
     document.querySelector('.world').style.backgroundPositionY = y + "%"
 }
 
+function marcador(x,y){
+    document.querySelector('.punto').style.opacity = 0;
+    document.querySelector('.punto').style.transition = 'opacity 1.5s, transform 1.5s';
+    setTimeout(function() {
+        document.querySelector('.punto').style.transform = 'translate('+ x + '%, ' + y + '%) scale(0.25)'
+        
+
+    }, 1200); setTimeout(function() {
+        document.querySelector('.punto').style.opacity = 1;
+        
+
+    }, 2500);
+
+}
+
 document.querySelector('#arg').onclick = function() {
-    mostrar(1,2)
+    mostrar(0,0)
+    marcador(-32,35)
 }
 
 document.querySelector('#ven').onclick = function() {
-    mostrar(2,1)
+    mostrar(0,0)
+    marcador(-35,2)
 }

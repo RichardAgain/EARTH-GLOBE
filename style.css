@@ -18,6 +18,14 @@ body {
     transition: all 1s ease-in-out;
 }
 
+.punto{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-35%, 2%) scale(0.25);
+    transition: all 1s ease-in;
+    opacity: 1; /* agregar esta línea */
+}
 main {
     position: absolute;
 }
