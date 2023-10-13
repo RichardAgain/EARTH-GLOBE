@@ -35,17 +35,42 @@ function marcador(x,y){
     }, 2500);
 
 }
+function mostrarPais(pais) {
+    const plantilla = `
+        <h1>${pais.nombre}</h1>
+        <p>Presidente: ${pais.presidente}</p>
+        <p>Población: ${pais.poblacion}</p>
+        <p>Tamaño: ${pais.tamaño}</p>
+    `;
+
+    document.querySelector('.content').innerHTML = plantilla;
+}
+const argentina = {
+    nombre: 'Argentina',
+    presidente: 'Juan Perón',
+    poblacion: 44938712,
+    tamaño: '1.778.220 km²'
+};
+const venezuela = {
+    nombre: 'Venezuela',
+    presidente: 'Juan Perón',
+    poblacion: 44938712,
+    tamaño: '1.778.220 km²'
+};
+
 
 document.querySelector('#arg').onclick = function() {
     mostrar(10,10)
     marcador(-27.5,45)
     regreso()
+    mostrarPais(argentina)
 }
 
 document.querySelector('#ven').onclick = function() {
-    mostrar(0,0)
+    mostrar(13.2,-10)
     marcador(-28,0)
     regreso('ven')
+    mostrarPais(venezuela)
 }
 
 document.querySelector('#fin').onclick = function() {

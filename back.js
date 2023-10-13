@@ -26,6 +26,6 @@ function regresar_animacion() {
     document.querySelector('.back').style.transform = 'translateX(-100%)'
     document.querySelector('.back').style.opacity = '0'
 
-    document.querySelector('.world').style.backgroundPositionX = "0"
-    document.querySelector('.world').style.backgroundPositionY = "0"
+    document.querySelector('.world').style.backgroundPositionX = "13.2%"
+    document.querySelector('.world').style.backgroundPositionY = "-10px"
 }
