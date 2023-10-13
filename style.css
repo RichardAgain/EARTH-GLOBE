@@ -159,3 +159,41 @@ main {
     opacity: 0.5;
     cursor: pointer;
 }
+
+.loading {
+    position: fixed;
+    top: 95%;
+    left: 87.5%;
+    width: 10%;
+    height: 10px;
+    border: white solid 3px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.311);
+    box-shadow: black 2px 2px 10px;
+    transform: translateY(250%);
+    transition: 1.5s;
+}
+
+.loading .loading_bar {
+    width: 0%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+@keyframes loading {
+    0%{
+        width: 0%
+    }
+
+    100% {
+        width: 100%;
+    }
+    
+}
+
+@keyframes reverse {
+    to{
+        width: 100%;
+    }
+}

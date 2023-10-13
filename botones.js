@@ -14,6 +14,10 @@ function mostrar(x, y) {
     document.querySelector('.world').style.backgroundPositionX = x + "%"
     document.querySelector('.world').style.backgroundPositionY = y + "px"
     document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
+
+    document.querySelector('.loading').style.transform = 'translate(0)'
+    document.querySelector('.loading_bar').style.animation = 'loading 21s'
+
 }
 
 function mover(x,y){

@@ -28,4 +28,7 @@ function regresar_animacion() {
 
     document.querySelector('.world').style.backgroundPositionX = "13.2%"
     document.querySelector('.world').style.backgroundPositionY = "-10px"
+
+    document.querySelector('.loading').style.transform = 'translateY(250%)'
+    document.querySelector('.loading_bar').style.animation = 'reverse 2s'
 }
