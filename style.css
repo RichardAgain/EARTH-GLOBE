@@ -110,7 +110,7 @@ main {
 .pais div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:left;
     font-size: 110%;
 }
 
@@ -118,7 +118,8 @@ main {
     border: 1px solid black;
     float: right;
     width: 20%;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 .content {
