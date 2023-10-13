@@ -22,7 +22,7 @@ function mostrar(x, y) {
 }
 
 function mover(x,y){
-    document.querySelector('.world').style.backgroundPositionX = x + "%"
+    document.querySelector('.world').style.backgroundPositionX = x + "px"
     document.querySelector('.world').style.backgroundPositionY = y + "px"
 }
 
