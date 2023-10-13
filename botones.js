@@ -11,7 +11,7 @@ function mostrar(x, y) {
     document.querySelector('.back').style.transform = 'translateX(32vw)'
     document.querySelector('.back').style.opacity = '1'
 
-    document.querySelector('.world').style.backgroundPositionX = x + "%"
+    document.querySelector('.world').style.backgroundPositionX = x + "px"
     document.querySelector('.world').style.backgroundPositionY = y + "px"
     document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
 
