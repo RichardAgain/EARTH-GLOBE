@@ -172,6 +172,7 @@ main {
     box-shadow: black 2px 2px 10px;
     transform: translateY(250%);
     transition: 1.5s;
+    opacity: 0;
 }
 
 .loading .loading_bar {
