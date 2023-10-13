@@ -22,10 +22,10 @@ function mover(x,y){
 }
 
 function marcador(x,y){
-    document.querySelector('.punto').style.opacity = 0;
-    document.querySelector('.punto').style.transition = 'opacity 1s, all 1s ease-in;';
+    // document.querySelector('.punto').style.opacity = 0;
+    // document.querySelector('.punto').style.transition = 'opacity 1s, all 1s ease-in;';
     setTimeout(function() {
-        document.querySelector('.punto').style.transform = 'translate('+ x + '%, ' + y + '%) scale(0.25)'
+        // document.querySelector('.punto').style.transform = 'translate('+ x + '%, ' + y + '%) scale(0.25)'
         
 
     }, 1200); setTimeout(function() {

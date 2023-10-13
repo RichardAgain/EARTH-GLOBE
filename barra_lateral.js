@@ -24,6 +24,11 @@ function show() {
     document.querySelector('.world').style.transform = 'translate(20vw,0) scale(2)'
 
     document.querySelector('.icon').setAttribute('src','icons/close.png')
+
+    document.querySelector('.punto').style.opacity = '1'
+
+    document.querySelector('.world').style.backgroundPositionX = '13.2%'
+    document.querySelector('.world').style.backgroundPositionY = '-10px'
 }
 
 function hide() {
