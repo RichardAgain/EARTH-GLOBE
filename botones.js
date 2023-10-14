@@ -51,8 +51,8 @@ function mostrarPais(pais) {
     document.querySelector('.content').innerHTML = plantilla;
 }
 const argentina = {
-    nombre: 'Argentina',
-    capital: 'Buenos Aires',
+    nombre: 'IGNORANTE',
+    capital: 'MALOS VIENTOS',
     bandera: 'banderas/argentina.webp',
     limit: 'limits/argentina_l.png',
     presidente: 'Alberto Fernández',
