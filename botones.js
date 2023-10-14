@@ -19,7 +19,6 @@ function mostrar(x, y) {
     document.querySelector('.loading').style.transform = 'translate(0)'
     document.querySelector('.loading_bar').style.animation = 'loading 21s'
 
-    console.log('dos veces?')
 }
 
 function marcador(x,y){
@@ -178,7 +177,7 @@ const australia = {
 
 
 document.querySelector('#arg').onclick = function() {
-    mostrar(16.2,-140)
+    mostrar(15,-180)
     console.log(argentina)
     marcador()
     regreso()
@@ -193,41 +192,41 @@ document.querySelector('#ven').onclick = function() {
 }
 
 document.querySelector('#fin').onclick = function() {
-    mostrar(62,245)
+    mostrar(62,180)
     marcador()
     regreso()
     mostrarPais(finlandia)
 }
 
 document.querySelector('#irl').onclick = function() {
-    mostrar(45,205)
+    mostrar(45,155)
     marcador()
     regreso()
     mostrarPais(irlanda)
 }
 document.querySelector('#can').onclick = function() {
-    mostrar(-7,130)
+    mostrar(-7,150)
     marcador()
     regreso()
     mostrarPais(canada)
 }
 
 document.querySelector('#ind').onclick = function() {
-    mostrar(90,76)
+    mostrar(90,46)
     marcador()
     regreso()
     mostrarPais(india)
 }
 
 document.querySelector('#sing').onclick = function() {
-    mostrar(103.2,-49.2)
+    mostrar(103.2,-35.2)
     marcador()
     regreso()
     mostrarPais(singapur)
 }
 
 document.querySelector('#cha').onclick = function() {
-    mostrar(58,54)
+    mostrar(58,24)
     marcador()
     regreso()
     mostrarPais(chad)
@@ -240,13 +239,13 @@ document.querySelector('#etio').onclick = function() {
     mostrarPais(etiopia)
 }
 document.querySelector('#aus').onclick = function() {
-    mostrar(118,-200)
+    mostrar(118,-135)
     marcador()
     regreso()
     mostrarPais(australia)
 }
 document.querySelector('#nuz').onclick = function() {
-    mostrar(140,-265)
+    mostrar(138.5,-195)
     marcador()
     regreso()
     mostrarPais(nueva_zelanda)
