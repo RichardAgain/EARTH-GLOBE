@@ -11,9 +11,9 @@ function mostrar(x, y) {
     document.querySelector('.back').style.transform = 'translateX(32vw)'
     document.querySelector('.back').style.opacity = '1'
 
-    document.querySelector('.world').style.backgroundPositionX = x + "px"
+    document.querySelector('.world').style.backgroundPositionX = x + "%"
     document.querySelector('.world').style.backgroundPositionY = y + "px"
-    document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
+    // document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
 
     document.querySelector('.loading').style.opacity = '1'
     document.querySelector('.loading').style.transform = 'translate(0)'
@@ -182,7 +182,7 @@ const australia = {
 
 
 document.querySelector('#arg').onclick = function() {
-    mostrar(-132,-245)
+    mostrar(16.2,-140)
     marcador()
     regreso()
     mostrarPais(argentina)
@@ -191,7 +191,7 @@ document.querySelector('#arg').onclick = function() {
 document.querySelector('#ven').onclick = function() {
     mostrar(13.2,-10)
     marcador()
-    regreso('ven')
+    regreso()
     mostrarPais(venezuela)
 }
 

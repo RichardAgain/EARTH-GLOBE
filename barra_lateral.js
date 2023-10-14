@@ -29,6 +29,7 @@ function show() {
 
     document.querySelector('.world').style.backgroundPositionX = '13.2%'
     document.querySelector('.world').style.backgroundPositionY = '-10px'
+
 }
 
 function hide() {
