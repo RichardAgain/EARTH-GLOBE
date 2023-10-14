@@ -15,6 +15,7 @@ function regreso() {
 function regresar_animacion() {
     setTimeout(function() {
         document.querySelector('.bar').style.transform = 'translateX(100%)'
+        document.querySelector('.bar').style.pointerEvents = 'all'
     
         document.querySelector('.show').style.transform = 'translateX(20vw)'
         document.querySelector('.show').style.opacity = '1'

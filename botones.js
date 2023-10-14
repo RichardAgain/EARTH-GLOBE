@@ -1,9 +1,11 @@
 
 function mostrar(x, y) {
     document.querySelector('.bar').style.transform = 'translateX(-100%)'
+    document.querySelector('.bar').style.pointerEvents = 'none'
     
     document.querySelector('.show').style.transform = 'translateX(-150%)'
     document.querySelector('.show').style.opacity = '0'
+    // document.querySelector('.show').style.pointerEvents = 'none'
     
     document.querySelector('.content').style.transform = 'translateX(78%)'
     document.querySelector('.content').style.opacity = '1'
@@ -18,7 +20,6 @@ function mostrar(x, y) {
     document.querySelector('.loading').style.opacity = '1'
     document.querySelector('.loading').style.transform = 'translate(0)'
     document.querySelector('.loading_bar').style.animation = 'loading 21s'
-
 }
 
 function marcador(x,y){
