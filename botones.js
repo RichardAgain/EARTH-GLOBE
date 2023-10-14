@@ -5,15 +5,15 @@ function mostrar(x, y) {
     document.querySelector('.show').style.transform = 'translateX(-150%)'
     document.querySelector('.show').style.opacity = '0'
     
-    document.querySelector('.content').style.transform = 'translateX(68%)'
+    document.querySelector('.content').style.transform = 'translateX(78%)'
     document.querySelector('.content').style.opacity = '1'
 
-    document.querySelector('.back').style.transform = 'translateX(32vw)'
+    document.querySelector('.back').style.transform = 'translateX(28vw)'
     document.querySelector('.back').style.opacity = '1'
 
     document.querySelector('.world').style.backgroundPositionX = x + "%"
     document.querySelector('.world').style.backgroundPositionY = y + "px"
-    // document.querySelector('.world').style.transform = 'translate(20vw,0) scale(1.7)'
+    document.querySelector('.world').style.transform = 'scale(2.5)'
 
     document.querySelector('.loading').style.opacity = '1'
     document.querySelector('.loading').style.transform = 'translate(0)'
@@ -22,22 +22,21 @@ function mostrar(x, y) {
 }
 
 function marcador(x,y){
-    // document.querySelector('.punto').style.opacity = 0;
-    // document.querySelector('.punto').style.transition = 'opacity 1s, all 1s ease-in;';
     setTimeout(function() {
-        // document.querySelector('.punto').style.transform = 'translate('+ x + '%, ' + y + '%) scale(0.25)'
-        
-
-    }, 1200); setTimeout(function() {
         document.querySelector('.punto').style.opacity = 1;
-        
-
     }, 2500);
 
 }
 function mostrarPais(pais) {
+    let dic = pais.bandera
+
+    console.log(dic)
     const plantilla = `
         <h1>${pais.nombre}</h1>
+        <hr>
+        <img class='bandera' src='${pais.bandera}'>
+        <br>
+        <img class='limitacion' src='${pais.limit}'>
         <p>Capital: ${pais.capital}</p>
         <p>Presidente: ${pais.presidente}</p>
         <p>Población: ${pais.poblacion}</p>
@@ -53,6 +52,8 @@ function mostrarPais(pais) {
 const argentina = {
     nombre: 'Argentina',
     capital: 'Buenos Aires',
+    bandera: 'banderas/argentina.webp',
+    limit: 'limits/argentina_l.png',
     presidente: 'Alberto Fernández',
     poblacion: '46.044.703 habitantes | Censo (2022)',
     tamaño: '2.780.400 km²',
@@ -64,6 +65,8 @@ const argentina = {
 const venezuela = {
     nombre: 'Venezuela',
     capital: 'Caracas',
+    bandera: 'banderas/venezuela.png',
+    limit: 'limits/venezuela_l.png',
     presidente: 'Nicolás Maduro',
     poblacion: '30.518.260 habitantes | Estimación (2023)',
     tamaño: '916.445 km²',
@@ -75,6 +78,8 @@ const venezuela = {
 const finlandia = {
     nombre: "Finlandia",
     capital: "Helsinki",
+    bandera: 'banderas/finlandia.svg',
+    limit: 'limits/finlandia_l.png',
     presidente: "Sauli Niinistö",
     poblacion: "5,5 millones de habitantes | Estimación (2023)",
     tamaño: "338.424 km²",
@@ -87,6 +92,8 @@ const finlandia = {
 const singapur = {
     nombre: "Singapur",
     capital: "Singapur",
+    bandera: 'banderas/singapur.svg',
+    limit: 'limits/singapur_l.png',
     presidente: "Halimah Yacob",
     poblacion: "5,7 millones",
     tamaño: "719 km²",
@@ -99,6 +106,8 @@ const singapur = {
 const canada= {
     nombre: "Canadá",
     capital: "Ottawa",
+    bandera: 'banderas/canada.svg',
+    limit: 'limits/canada_l.png',
     presidente: "Justin Trudeau",
     poblacion: "38,2 millones",
     tamaño: "9.984.670 km²",
@@ -111,6 +120,8 @@ const canada= {
   const india = {
     nombre: "India",
     capital: "Nueva Delhi",
+    bandera: 'banderas/india.svg',
+    limit: 'limits/india_l.png',
     presidente: "Narendra Modi",
     poblacion: "1.452 millones",
     tamaño: "3.287.263 km²",
@@ -122,6 +133,8 @@ const canada= {
   const irlanda = {
     nombre: "Irlanda",
     capital: "Dublín",
+    bandera: 'banderas/irlanda.svg',
+    limit: 'limits/irlanda_l.png',
     presidente: "Michael D. Higgins",
     poblacion: "5,1 millones",
     tamaño: "70.273 km²",
@@ -133,6 +146,8 @@ const canada= {
   const chad= {
     nombre: "Chad",
     capital: "Yamena",
+    bandera: 'banderas/chad.svg',
+    limit: 'limits/chad_l.png',
     presidente: "Mahamat Idriss Déby Itno",
     poblacion: "16,3 millones",
     tamaño: "1.284.000 km²",
@@ -144,6 +159,8 @@ const canada= {
   const etiopia= {
     nombre: "Etiopía",
     capital: "Adís Abeba",
+    bandera: 'banderas/etiopia.png',
+    limit: 'limits/etiopia_l.png',
     presidente: "Sahle-Work Zewde",
     poblacion: "115,2 millones",
     tamaño: "1.104.300 km²",
@@ -155,6 +172,8 @@ const canada= {
 const australia = {
     nombre: "Australia",
     capital: "Canberra",
+    bandera: 'banderas/australia.svg',
+    limit: 'limits/australia_l.png',
     presidente: "Anthony Albanese",
     poblacion: "25,8 millones",
     tamaño: "7.692.024 km²",
@@ -166,6 +185,8 @@ const australia = {
   const nueva_zelanda = {
     nombre: "Nueva Zelanda",
     capital: "Wellington",
+    bandera: 'banderas/nuevaZelanda.svg',
+    limit: 'limits/zelanda_l.png',
     presidente: "Jacinda Ardern",
     poblacion: "5,1 millones",
     tamaño: "268.680 km²",
@@ -193,6 +214,7 @@ document.querySelector('#ven').onclick = function() {
 
 document.querySelector('#fin').onclick = function() {
     mostrar(62,180)
+    document.querySelector('.world').style.transform = 'scale(2.8)'
     marcador()
     regreso()
     mostrarPais(finlandia)
@@ -246,6 +268,7 @@ document.querySelector('#aus').onclick = function() {
 }
 document.querySelector('#nuz').onclick = function() {
     mostrar(138.5,-195)
+    document.querySelector('.world').style.transform = 'scale(2.8)'
     marcador()
     regreso()
     mostrarPais(nueva_zelanda)
