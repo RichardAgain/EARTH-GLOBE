@@ -182,7 +182,7 @@ const australia = {
 
 
 document.querySelector('#arg').onclick = function() {
-    mostrar(15,-245)
+    mostrar(-132,-245)
     marcador()
     mostrarPais(argentina)
 }
