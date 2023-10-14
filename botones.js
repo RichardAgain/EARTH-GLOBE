@@ -19,11 +19,7 @@ function mostrar(x, y) {
     document.querySelector('.loading').style.transform = 'translate(0)'
     document.querySelector('.loading_bar').style.animation = 'loading 21s'
 
-}
-
-function mover(x,y){
-    document.querySelector('.world').style.backgroundPositionX = x + "px"
-    document.querySelector('.world').style.backgroundPositionY = y + "px"
+    console.log('dos veces?')
 }
 
 function marcador(x,y){
@@ -183,6 +179,7 @@ const australia = {
 
 document.querySelector('#arg').onclick = function() {
     mostrar(16.2,-140)
+    console.log(argentina)
     marcador()
     regreso()
     mostrarPais(argentina)
@@ -209,7 +206,7 @@ document.querySelector('#irl').onclick = function() {
     mostrarPais(irlanda)
 }
 document.querySelector('#can').onclick = function() {
-    mostrar(2,200)
+    mostrar(-7,130)
     marcador()
     regreso()
     mostrarPais(canada)

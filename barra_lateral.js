@@ -44,6 +44,10 @@ function hide() {
     document.querySelector('.punto').style.transition = 'opacity 0.3s'
 
     document.querySelector('.punto').style.opacity = "0"
+
+    document.querySelector('.world').style.backgroundPositionX = '0'
+    document.querySelector('.world').style.backgroundPositionY = '0'
+
 }
 
 function hideC(){

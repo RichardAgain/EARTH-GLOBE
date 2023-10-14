@@ -10,8 +10,8 @@ body {
     position: absolute;
     top: 5%;
     left: 25%;
-    width: 90vh;
-    height: 90vh;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
     background: url("images/world.jpg");
     background-size: cover;
